@@ -25,8 +25,7 @@ layers = sections[1]
 for i,l in enumerate(sections[0]):
     # find end of starting comments
     if l[0]!=';':
-        sections[0].insert(i,';Post processing for aux device control using script from <URL>\n')
-        #TODO add Github URL
+        sections[0].insert(i,';Post processing for aux device control using script from https://github.com/OrcainOrbit/Plasma3DPrinting\n')
         break
 
 pen = gcodeprocessor.GCodePen()
